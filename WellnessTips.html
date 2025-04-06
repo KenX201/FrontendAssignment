@@ -2,9 +2,226 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Wellness Tips</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p>Hello world</p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Good<span>+</span>Health</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">WELLNESS TIPS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">NUTRITION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FITNESS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-4">Wellness Tips for Healthy Living</h1>
+            <p class="lead">Discover expert advice to improve your overall wellbeing</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Categories Section -->
+        <section class="mb-5">
+            <h2 class="section-title">Explore Wellness Topics</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="category-card text-center p-4 interactive-topic">
+                        <i class="fas fa-spa fa-3x mb-3 topic-icon"></i>
+                        <h3 class="category-title">Skin-Care Tips</h3>
+                        <p>Healthy skin routines for all seasons</p>
+                        <div class="hidden-content">
+                            <p class="small">Tap for seasonal skincare guides</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category-card text-center p-4 interactive-topic">
+                        <i class="fas fa-utensils fa-3x mb-3 topic-icon"></i>
+                        <h3 class="category-title">Food and Nutrition</h3>
+                        <p>Eating right for optimal health</p>
+                        <div class="hidden-content">
+                            <p class="small">Tap for meal planning tools</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category-card text-center p-4 interactive-topic">
+                        <i class="fas fa-heartbeat fa-3x mb-3 topic-icon"></i>
+                        <h3 class="category-title">Holistic Treatment</h3>
+                        <p>Whole-body approaches to wellness</p>
+                        <div class="hidden-content">
+                            <p class="small">Tap for holistic practitioners</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-4">
+                    <div class="category-card text-center p-4 interactive-topic">
+                        <i class="fas fa-running fa-3x mb-3 topic-icon"></i>
+                        <h3 class="category-title">Fitness Tips</h3>
+                        <p>Exercise routines for all levels</p>
+                        <div class="hidden-content">
+                            <p class="small">Tap for workout videos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category-card text-center p-4 interactive-topic">
+                        <i class="fas fa-heart fa-3x mb-3 topic-icon"></i>
+                        <h3 class="category-title">Relationship Tips</h3>
+                        <p>Healthy connections for wellbeing</p>
+                        <div class="hidden-content">
+                            <p class="small">Tap for relationship advice</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category-card text-center p-4 interactive-topic">
+                        <i class="fas fa-list fa-3x mb-3 topic-icon"></i>
+                        <h3 class="category-title">All Topics</h3>
+                        <p>Browse all wellness articles</p>
+                        <div class="hidden-content">
+                            <p class="small">Tap to explore everything</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Articles -->
+        <section class="mb-5">
+            <h2 class="section-title">This Just In</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="article-card">
+                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" class="card-img-top article-img" alt="Healthy Snacks">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">HEALTHY SNACK IDEAS</span>
+                            <h3 class="article-title">Found: The Most Refreshing Summer Dessert</h3>
+                            <p class="article-excerpt">2-Ingredient Avocado Shaved Ice that will cool you down this summer.</p>
+                            <p class="article-author">BY MARI YAZAWA</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="article-card">
+                        <img src="https://images.unsplash.com/photo-1551269901-5c5e14c25df7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" class="card-img-top article-img" alt="Healthy Drinks">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">HEALTHY DRINKS</span>
+                            <h3 class="article-title">The Gross Reason Why You Shouldn't Drink That Glass of Water</h3>
+                            <p class="article-excerpt">You left out overnight. According to a Toxicologist.</p>
+                            <p class="article-author">BY HAMMAN SCHNEIDER</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="article-card">
+                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" class="card-img-top article-img" alt="Healthy Eating">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">HEALTHY EATING TIPS</span>
+                            <h3 class="article-title">Americans Aren't Getting Enough of This Key Brain-Boosting Nutrient</h3>
+                            <p class="article-excerpt">Here Are 3 Ways To Eat More of It.</p>
+                            <p class="article-author">BY MICHELE ROSS</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="mb-5 p-4 bg-light rounded">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h3>Stay Updated with Wellness Tips</h3>
+                    <p>Subscribe to our newsletter for weekly health tips and exclusive content.</p>
+                </div>
+                <div class="col-md-6">
+                    <form class="row g-2">
+                        <div class="col-8">
+                            <input type="email" class="form-control" placeholder="Your email address">
+                        </div>
+                        <div class="col-4">
+                            <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 class="footer-title">Good+Health</h3>
+                    <p>Your trusted source for health and wellness information since 2025.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Articles</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="footer-title">Categories</h4>
+                    <div class="footer-links">
+                        <a href="#">Nutrition</a>
+                        <a href="#">Fitness</a>
+                        <a href="#">Mental Health</a>
+                        <a href="#">Skin Care</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 bg-light">
+            <div class="text-center pt-2">
+                <p>&copy; 2025 W+GOOD. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
