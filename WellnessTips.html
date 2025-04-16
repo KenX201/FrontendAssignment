@@ -2,225 +2,218 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Wellness Tips</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good+Health | Wellness Tips</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <header>
         <div class="container">
-            <a class="navbar-brand" href="#">Good<span>+</span>Health</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">WELLNESS TIPS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">NUTRITION</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">FITNESS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
+            <div class="header-content">
+                <a href="index.html" class="logo">Good<span>+Health</span></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="wellness-tips.html" class="active">Wellness Tips</a></li>
+                        <li><a href="nutrition.html">Nutrition</a></li>
+                        <li><a href="fitness.html">Fitness</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li>
+                            <button class="theme-toggle" id="themeToggle">
+                                <i class="fas fa-moon"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="container text-center">
-            <h1 class="display-4 fw-bold mb-4">Wellness Tips for Healthy Living</h1>
-            <p class="lead">Discover expert advice to improve your overall wellbeing</p>
+    <section class="hero">
+        <div class="container">
+            <h1>Wellness Tips for a Healthier You</h1>
+            <p>Discover expert advice and practical tips to improve your overall well-being and live your best life</p>
         </div>
     </section>
 
-    <!-- Main Content -->
-    <div class="container">
-        <!-- Categories Section -->
-        <section class="mb-5">
-            <h2 class="section-title">Explore Wellness Topics</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="category-card text-center p-4 interactive-topic">
-                        <i class="fas fa-spa fa-3x mb-3 topic-icon"></i>
-                        <h3 class="category-title">Skin-Care Tips</h3>
-                        <p>Healthy skin routines for all seasons</p>
-                        <div class="hidden-content">
-                            <p class="small">Tap for seasonal skincare guides</p>
-                        </div>
+    <section class="category-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#" class="active">All Topics</a></li>
+                <li><a href="#">Skin-Care Tips</a></li>
+                <li><a href="#">Food & Nutrition</a></li>
+                <li><a href="#">Holistic Treatment</a></li>
+                <li><a href="#">Fitness Tips</a></li>
+                <li><a href="#">Healthy Mind</a></li>
+                <li><a href="#">Healthy Body</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="featured-articles">
+            <article class="article-card">
+                <div class="article-image">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Plant Based Lunches">
+                </div>
+                <div class="article-content">
+                    <span class="article-category">Food & Nutrition</span>
+                    <h3 class="article-title">You Can Make 5 Easy, Plant Based Lunches From This One Grocery List</h3>
+                    <p class="article-excerpt">Discover how to create delicious and nutritious plant-based lunches with just a few simple ingredients.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-user"></i> Sarah Johnson</span>
+                        <span style="margin-left: 15px;"><i class="far fa-clock"></i> 3 days ago</span>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="category-card text-center p-4 interactive-topic">
-                        <i class="fas fa-utensils fa-3x mb-3 topic-icon"></i>
-                        <h3 class="category-title">Food and Nutrition</h3>
-                        <p>Eating right for optimal health</p>
-                        <div class="hidden-content">
-                            <p class="small">Tap for meal planning tools</p>
-                        </div>
+            </article>
+
+            <article class="article-card">
+                <div class="article-image">
+                    <img src="https://images.unsplash.com/photo-1519735777090-ec97162dc266?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Skin Care">
+                </div>
+                <div class="article-content">
+                    <span class="article-category">Skin-Care Tips</span>
+                    <h3 class="article-title">3 Ways To Help Protect Your Hands from the Sun and Dryness</h3>
+                    <p class="article-excerpt">Your hands show signs of aging faster than other parts of your body. Here's how to protect them.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-user"></i> Dr. Emily Chen</span>
+                        <span style="margin-left: 15px;"><i class="far fa-clock"></i> 1 week ago</span>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="category-card text-center p-4 interactive-topic">
-                        <i class="fas fa-heartbeat fa-3x mb-3 topic-icon"></i>
-                        <h3 class="category-title">Holistic Treatment</h3>
-                        <p>Whole-body approaches to wellness</p>
-                        <div class="hidden-content">
-                            <p class="small">Tap for holistic practitioners</p>
-                        </div>
+            </article>
+
+            <article class="article-card">
+                <div class="article-image">
+                    <img src="https://images.unsplash.com/photo-1491841573635-49f3530cb834?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Brain Health">
+                </div>
+                <div class="article-content">
+                    <span class="article-category">Healthy Mind</span>
+                    <h3 class="article-title">Neuroscientists Tell Us the First Things They Do Every Morning for Peak Brain Health</h3>
+                    <p class="article-excerpt">Start your day right with these science-backed morning routines from brain experts.</p>
+                    <div class="article-meta">
+                        <span><i class="far fa-user"></i> Mark Williams</span>
+                        <span style="margin-left: 15px;"><i class="far fa-clock"></i> 2 days ago</span>
                     </div>
                 </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-md-4">
-                    <div class="category-card text-center p-4 interactive-topic">
-                        <i class="fas fa-running fa-3x mb-3 topic-icon"></i>
-                        <h3 class="category-title">Fitness Tips</h3>
-                        <p>Exercise routines for all levels</p>
-                        <div class="hidden-content">
-                            <p class="small">Tap for workout videos</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="category-card text-center p-4 interactive-topic">
-                        <i class="fas fa-heart fa-3x mb-3 topic-icon"></i>
-                        <h3 class="category-title">Relationship Tips</h3>
-                        <p>Healthy connections for wellbeing</p>
-                        <div class="hidden-content">
-                            <p class="small">Tap for relationship advice</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="category-card text-center p-4 interactive-topic">
-                        <i class="fas fa-list fa-3x mb-3 topic-icon"></i>
-                        <h3 class="category-title">All Topics</h3>
-                        <p>Browse all wellness articles</p>
-                        <div class="hidden-content">
-                            <p class="small">Tap to explore everything</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </article>
         </section>
 
-        <!-- Featured Articles -->
-        <section class="mb-5">
-            <h2 class="section-title">This Just In</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="article-card">
-                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" class="card-img-top article-img" alt="Healthy Snacks">
-                        <div class="card-body">
-                            <span class="badge bg-primary mb-2">HEALTHY SNACK IDEAS</span>
-                            <h3 class="article-title">Found: The Most Refreshing Summer Dessert</h3>
-                            <p class="article-excerpt">2-Ingredient Avocado Shaved Ice that will cool you down this summer.</p>
-                            <p class="article-author">BY MARI YAZAWA</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
+        <section class="latest-section">
+            <h2 class="section-title">Latest Wellness Stories</h2>
+            <div class="latest-articles">
+                <article class="small-article">
+                    <div class="small-article-image">
+                        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Hand Sanitizer">
+                    </div>
+                    <div class="small-article-content">
+                        <h4 class="small-article-title">The Cult-Favorite Hand Sanitizer That Sells Every 90 Seconds Just Got a Makeover</h4>
+                        <div class="small-article-meta">
+                            <span><i class="far fa-user"></i> Francesca Krempa</span>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="article-card">
-                        <img src="https://images.unsplash.com/photo-1551269901-5c5e14c25df7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" class="card-img-top article-img" alt="Healthy Drinks">
-                        <div class="card-body">
-                            <span class="badge bg-primary mb-2">HEALTHY DRINKS</span>
-                            <h3 class="article-title">The Gross Reason Why You Shouldn't Drink That Glass of Water</h3>
-                            <p class="article-excerpt">You left out overnight. According to a Toxicologist.</p>
-                            <p class="article-author">BY HAMMAN SCHNEIDER</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
+                </article>
+
+                <article class="small-article">
+                    <div class="small-article-image">
+                        <img src="https://images.unsplash.com/photo-1535914254981-b5012eebbd15?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Meditation">
+                    </div>
+                    <div class="small-article-content">
+                        <h4 class="small-article-title">5-Minute Meditation Routine That Will Transform Your Morning</h4>
+                        <div class="small-article-meta">
+                            <span><i class="far fa-user"></i> Jessica Lee</span>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="article-card">
-                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" class="card-img-top article-img" alt="Healthy Eating">
-                        <div class="card-body">
-                            <span class="badge bg-primary mb-2">HEALTHY EATING TIPS</span>
-                            <h3 class="article-title">Americans Aren't Getting Enough of This Key Brain-Boosting Nutrient</h3>
-                            <p class="article-excerpt">Here Are 3 Ways To Eat More of It.</p>
-                            <p class="article-author">BY MICHELE ROSS</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
+                </article>
+
+                <article class="small-article">
+                    <div class="small-article-image">
+                        <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Sleep">
+                    </div>
+                    <div class="small-article-content">
+                        <h4 class="small-article-title">The Perfect Bedtime Routine for Deeper, More Restorative Sleep</h4>
+                        <div class="small-article-meta">
+                            <span><i class="far fa-user"></i> Dr. Michael Brown</span>
                         </div>
                     </div>
-                </div>
+                </article>
+
+                <article class="small-article">
+                    <div class="small-article-image">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Superfoods">
+                    </div>
+                    <div class="small-article-content">
+                        <h4 class="small-article-title">10 Superfoods You Should Be Eating for Optimal Gut Health</h4>
+                        <div class="small-article-meta">
+                            <span><i class="far fa-user"></i> Nutrition Team</span>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
+    </main>
 
-        <!-- Newsletter Section -->
-        <section class="mb-5 p-4 bg-light rounded">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h3>Stay Updated with Wellness Tips</h3>
-                    <p>Subscribe to our newsletter for weekly health tips and exclusive content.</p>
-                </div>
-                <div class="col-md-6">
-                    <form class="row g-2">
-                        <div class="col-8">
-                            <input type="email" class="form-control" placeholder="Your email address">
-                        </div>
-                        <div class="col-4">
-                            <button type="submit" class="btn btn-primary w-100">Subscribe</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h3 class="footer-title">Good+Health</h3>
-                    <p>Your trusted source for health and wellness information since 2025.</p>
-                    <div class="social-icons mt-3">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <h4 class="footer-title">Quick Links</h4>
-                    <div class="footer-links">
-                        <a href="#">Home</a>
-                        <a href="#">About</a>
-                        <a href="#">Articles</a>
-                        <a href="#">Contact</a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <h4 class="footer-title">Categories</h4>
-                    <div class="footer-links">
-                        <a href="#">Nutrition</a>
-                        <a href="#">Fitness</a>
-                        <a href="#">Mental Health</a>
-                        <a href="#">Skin Care</a>
-                    </div>
-                </div>
+            <a href="index.html" class="footer-logo">Good+Health</a>
+            <div class="footer-links">
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
             </div>
-            <hr class="mt-4 bg-light">
-            <div class="text-center pt-2">
-                <p>&copy; 2025 W+GOOD. All rights reserved.</p>
-            </div>
+            <p class="copyright">© 2025 Good+Health. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Dark mode toggle functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const icon = themeToggle.querySelector('i');
+        
+        // Check for saved user preference or use system preference
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+            document.body.classList.add('dark-mode');
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            
+            if (document.body.classList.contains('dark-mode')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        // Store user preferences in localStorage
+        function storeUserPreferences() {
+            // You can add more preferences to store here
+            const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+            localStorage.setItem('theme', theme);
+        }
+
+        // Load user preferences when page loads
+        window.addEventListener('load', () => {
+            // Check for saved theme preference
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark-mode');
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            }
+        });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
