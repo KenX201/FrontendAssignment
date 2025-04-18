@@ -43,3 +43,147 @@ window.addEventListener('load', () => {
         icon.classList.add('fa-sun');
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    // Video handling functionality
+    const articleCards = document.querySelectorAll('.article-card');
+    let currentOpenVideo = null;
+
+    articleCards.forEach((card, index) => {
+        // Add play icon to each article card
+        const imageContainer = card.querySelector('.article-image');
+        const playIcon = document.createElement('i');
+        playIcon.className = 'fas fa-play play-icon';
+        imageContainer.appendChild(playIcon);
+
+        // Handle click on article card
+        card.addEventListener('click', function(e) {
+            // Don't open if clicking on links or buttons
+            if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON') return;
+            
+            const videoUrl = this.getAttribute('data-video');
+            if (!videoUrl) return;
+
+            const containerId = `videoContainer${index + 1}`;
+            const videoContainer = document.getElementById(containerId);
+
+            // If this video is already open, close it
+            if (currentOpenVideo === containerId) {
+                videoContainer.classList.remove('active');
+                videoContainer.innerHTML = '';
+                currentOpenVideo = null;
+                return;
+            }
+
+            // Close any other open videos
+            document.querySelectorAll('.video-container').forEach(container => {
+                if (container.id !== containerId) {
+                    container.classList.remove('active');
+                    container.innerHTML = '';
+                }
+            });
+
+            // Open this video
+            videoContainer.innerHTML = `
+                <iframe src="${videoUrl}?autoplay=1" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            `;
+            videoContainer.classList.add('active');
+            currentOpenVideo = containerId;
+
+            // Smooth scroll to video
+            setTimeout(() => {
+                videoContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }, 100);
+        });
+    });
+
+    // Close video when clicking anywhere outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.article-card') && 
+            !e.target.closest('.video-container') && 
+            currentOpenVideo) {
+            const videoContainer = document.getElementById(currentOpenVideo);
+            if (videoContainer) {
+                videoContainer.classList.remove('active');
+                videoContainer.innerHTML = '';
+                currentOpenVideo = null;
+            }
+        }
+    });
+});document.addEventListener('DOMContentLoaded', function() {
+
+    // Video handling functionality
+    const articleCards = document.querySelectorAll('.article-card');
+    let currentOpenVideo = null;
+
+    articleCards.forEach((card, index) => {
+        // Add play icon to each article card
+        const imageContainer = card.querySelector('.article-image');
+        const playIcon = document.createElement('i');
+        playIcon.className = 'fas fa-play play-icon';
+        imageContainer.appendChild(playIcon);
+
+        // Handle click on article card
+        card.addEventListener('click', function(e) {
+            // Don't open if clicking on links or buttons
+            if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON') return;
+            
+            const videoUrl = this.getAttribute('data-video');
+            if (!videoUrl) return;
+
+            const containerId = `videoContainer${index + 1}`;
+            const videoContainer = document.getElementById(containerId);
+
+            // If this video is already open, close it
+            if (currentOpenVideo === containerId) {
+                videoContainer.classList.remove('active');
+                videoContainer.innerHTML = '';
+                currentOpenVideo = null;
+                return;
+            }
+
+            // Close any other open videos
+            document.querySelectorAll('.video-container').forEach(container => {
+                if (container.id !== containerId) {
+                    container.classList.remove('active');
+                    container.innerHTML = '';
+                }
+            });
+
+            // Open this video
+            videoContainer.innerHTML = `
+                <iframe src="${videoUrl}?autoplay=1" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            `;
+            videoContainer.classList.add('active');
+            currentOpenVideo = containerId;
+
+            // Smooth scroll to video
+            setTimeout(() => {
+                videoContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }, 100);
+        });
+    });
+
+    // Close video when clicking anywhere outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.article-card') && 
+            !e.target.closest('.video-container') && 
+            currentOpenVideo) {
+            const videoContainer = document.getElementById(currentOpenVideo);
+            if (videoContainer) {
+                videoContainer.classList.remove('active');
+                videoContainer.innerHTML = '';
+                currentOpenVideo = null;
+            }
+        }
+    });
+});
