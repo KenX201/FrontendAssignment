@@ -25,280 +25,348 @@
 <body>
     <header>
         <div class="recipe_page">
-            <div class="header-content">
-                <!-- Topic of website-->
-                <a href="home.html" class="logo">Shape<span>+Health</span></a>
-                <nav>
-                    <ul>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="WellnessTips.html" class="active">Wellness Tips</a></li>
-                        <li><a href="nutrition.html">Nutrition</a></li>
-                        <li><a href="recipe.html">Healthy Recipes</a></li>
-                        <li><a href="Fitness.html">Fitness</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="Contact.html">Contact</a></li>
-                        <li>
-                            <button class="theme-toggle" id="themeToggle">
-                                <i class="fas fa-moon"></i>
-                            </button>
-                        </li>
-                    </ul>
-                </nav>
+            <div class="container">
+                <div class="header-content">
+                    <!-- Topic of website-->
+                    <a href="home.html" class="logo">Shape<span>+Health</span></a>
+                    <nav>
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="WellnessTips.html" class="active">Wellness Tips</a></li>
+                            <li><a href="nutrition.html">Nutrition</a></li>
+                            <li><a href="recipe.html">Healthy Recipes</a></li>
+                            <li><a href="Fitness.html">Fitness</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="bmi&tdee.html">BMI Calculator</a></li>
+                            <li><a href="Contact.html">Contact</a></li>
+                            <li>
+                                <button class="theme-toggle" id="themeToggle">
+                                    <i class="fas fa-moon"></i>
+                                </button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
+        </div>
     </header>
 
     <!-- Hero Section -->
     <!-- Topic And Title of this webpage-->
-    <section class="hero-section">
+    <section class="heroRecipe">
         <div class="container">
             <h1>Healthy Recipes</h1>
             <p>Wholesome Bites, Better Life - Let's Get Cooking!</p>
         </div>
     </section>
 
-    <!--Internal Link!!!-->
     <main>
         <!--Categories-->
-        <section class="category">
-            <h1 class="category maintitle"><Strong>Recipe Category</Strong></h1>
-            <section id="food">
+        <div class="category">
+            <button class="toggle-btn" onclick="toggleContent(this)">
+                <h1 class="category maintitle"><Strong>Recipe Category</Strong></h1>
+            </button>
+            <div class="content">
+                <p>Click to explore:</p>
 
-                <!--Food, Meal Or Dish-->
-                <h2 class="category subtitle"><Strong><em>Food, Meal Or Dish</em></Strong></h2>
-                <section id="mealType">
 
-                    <!--Breakfast-->
-                    <section class="breakfast">
-                        <h2><em>Breakfast</em></h2>
-                        <section></section>
-                    </section>
 
-                    <!--Lunch-->
-                    <section class="lunch">
-                        <h2><em>Lunch</em></h2>
-                        <section class="numRecipe">
+                <!-- 1st Nested -->
+                <div class="nested-section">
+                    <button class="toggle-btn nested" onclick="toggleContent(this)">
+                        <h2 class="category subtitle"><Strong><em>Food, Meal Or Dish</em></Strong></h2>
+                        <span class="arrow">▶️</span>
+                    </button>
+                    <div class="content nested-content">
 
-                            <!--Egg & Veggie Stir-Fry with Brown Rice-->
-                            <article id="EggVeggie_StirFry_Rice">
-                                <h2 class="numRecipe name">Egg & Veggie Stir-Fry with Brown Rice</h2>
+                        <!-- ✅ 2nd Nested inside Root Vegetables -->
+                        <div class="nested-section">
+                            <button class="toggle-btn deep-nested" onclick="toggleContent(this)">
+                                <h2><em>Breakfast</em></h2>
+                                <span class="arrow">▶️</span>
+                            </button>
+                            <div class="content nested-content">
+                                <p>No</p>
+                            </div>
+                        </div>
 
-                                <div class="Serve_Nutrition">
-                                    <h2 class="numRecipe content">Servings:</h2>
-                                    <p>2 servings</p>
-                                    <h2 class="numRecipe content">Nutrition Info (Per Serving, Approximate):</h2>
-                                    <ul>
-                                        <li><Strong>Calories: </Strong>~330</li>
-                                        <li><Strong>Protein: </Strong>13 g</li>
-                                        <li><Strong>Carbs: </Strong>38 g</li>
-                                        <li><Strong>Fat: </Strong>13 g</li>
-                                        <li><Strong>Fiber: </Strong>4 - 5 g</li>
-                                        <li><Strong>Sodium: </Strong>~500 mg (depends on soy sauce)</li>
-                                    </ul>
-                                </div>
+                        <!-- ✅ 2nd Nested inside Root Vegetables -->
+                        <div class="nested-section">
+                            <button class="toggle-btn deep-nested" onclick="toggleContent(this)">
+                                <h2><em>Lunch</em></h2>
+                                <span class="arrow">▶️</span>
+                            </button>
+                            <div class="content nested-content">
+                                <!--Egg & Veggie Stir-Fry with Brown Rice-->
+                                <article id="EggVeggie_StirFry_Rice">
+                                    <h2 class="numRecipe name">Egg & Veggie Stir-Fry with Brown Rice</h2>
 
-                                <div class="Ingredient">
-                                    <table border="1">
-                                        <caption class="numRecipe content"><strong>Ingredient</strong></caption>
-                                        <tbody>
-                                            <thead>
+                                    <div class="Serve_Nutrition">
+                                        <h2 class="numRecipe content">Servings:</h2>
+                                        <p>2 servings</p>
+                                        <h2 class="numRecipe content">Nutrition Info (Per Serving,
+                                            Approximate):
+                                        </h2>
+                                        <ul>
+                                            <li><Strong>Calories: </Strong>~330</li>
+                                            <li><Strong>Protein: </Strong>13 g</li>
+                                            <li><Strong>Carbs: </Strong>38 g</li>
+                                            <li><Strong>Fat: </Strong>13 g</li>
+                                            <li><Strong>Fiber: </Strong>4 - 5 g</li>
+                                            <li><Strong>Sodium: </Strong>~500 mg (depends on soy sauce)</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="Ingredient">
+                                        <table border="1">
+                                            <caption class="numRecipe content"><strong>Ingredient</strong>
+                                            </caption>
+                                            <tbody>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Name</th>
+                                                        <th>Picture</th>
+                                                        <th>Comment</th>
+                                                        <th>Amount Required</th>
+                                                    </tr>
+                                                </thead>
                                                 <tr>
-                                                    <th>Name</th>
-                                                    <th>Picture</th>
-                                                    <th>Comment</th>
-                                                    <th>Amount Required</th>
+                                                    <th>Eggs</th>
+                                                    <td>
+                                                        <figure><img id="egg"
+                                                                src="/image/recipe/egg/egg1.jpg" alt="egg1"
+                                                                width="200" height="200"
+                                                                onclick="cycleImage('egg')">
+                                                        </figure>
+                                                    </td>
+                                                    <td>Large</td>
+                                                    <td>2</td>
                                                 </tr>
-                                            </thead>
-                                            <tr>
-                                                <th>Eggs</th>
-                                                <td></td>
-                                                <td>Large</td>
-                                                <td>2</td>
-                                            </tr>
 
-                                            <tr>
-                                                <th>Cooked Brown Rice</th>
-                                                <td></td>
-                                                <td>(preferably cold/leftover — helps with texture)</td>
-                                                <td>1 cup</td>
-                                            </tr>
+                                                <tr>
+                                                    <th>Cooked Brown Rice</th>
+                                                    <td></td>
+                                                    <td>(preferably cold/leftover — helps with texture)</td>
+                                                    <td>1 cup</td>
+                                                </tr>
 
-                                            <tr>
-                                                <th>Mixed Vegies</th>
-                                                <td></td>
-                                                <td>Chopped (e.g., bell pepper, snap peas, carrots, broccoli,
-                                                    zucchini, or a frozen stir-fry mix)</td>
-                                                <td>1 cup</td>
-                                            </tr>
+                                                <tr>
+                                                    <th>Mixed Vegies</th>
+                                                    <td></td>
+                                                    <td>Chopped (e.g., bell pepper, snap peas, carrots,
+                                                        broccoli,
+                                                        zucchini, or a frozen stir-fry mix)</td>
+                                                    <td>1 cup</td>
+                                                </tr>
 
-                                            <tr>
-                                                <th>Garlic</th>
-                                                <td></td>
-                                                <td>Minced</td>
-                                                <td>2 cloves</td>
-                                            </tr>
+                                                <tr>
+                                                    <th>Garlic</th>
+                                                    <td></td>
+                                                    <td>Minced</td>
+                                                    <td>2 cloves</td>
+                                                </tr>
 
-                                            <tr>
-                                                <th>Fresh Ginger</th>
-                                                <td></td>
-                                                <td>Grated (or 1/4 tsp ground ginger)</td>
-                                                <td>1 tsp</td>
-                                            </tr>
+                                                <tr>
+                                                    <th>Fresh Ginger</th>
+                                                    <td></td>
+                                                    <td>Grated (or 1/4 tsp ground ginger)</td>
+                                                    <td>1 tsp</td>
+                                                </tr>
 
-                                            <tr>
-                                                <th>Low-Sodium Soy Sauce</th>
-                                                <td></td>
-                                                <td>(or coconut aminos for gluten-free)</td>
-                                                <td>1 tbsp</td>
-                                            </tr>
+                                                <tr>
+                                                    <th>Low-Sodium Soy Sauce</th>
+                                                    <td></td>
+                                                    <td>(or coconut aminos for gluten-free)</td>
+                                                    <td>1 tbsp</td>
+                                                </tr>
 
-                                            <tr>
-                                                <th>Sesame Oil</th>
-                                                <td></td>
-                                                <td>(or olive oil)</td>
-                                                <td>1 tsp</td>
-                                            </tr>
+                                                <tr>
+                                                    <th>Sesame Oil</th>
+                                                    <td></td>
+                                                    <td>(or olive oil)</td>
+                                                    <td>1 tsp</td>
+                                                </tr>
 
-                                            <tr>
-                                                <th>Green Onion</th>
-                                                <td></td>
-                                                <td>Sliced (optional garnish)</td>
-                                                <td>1</td>
-                                            </tr>
+                                                <tr>
+                                                    <th>Green Onion</th>
+                                                    <td></td>
+                                                    <td>Sliced (optional garnish)</td>
+                                                    <td>1</td>
+                                                </tr>
 
-                                            <tr>
-                                                <th>Chili Flakes</th>
-                                                <td></td>
-                                                <td>(optional for heat)</td>
-                                                <td>Pinch</td>
-                                            </tr>
+                                                <tr>
+                                                    <th>Chili Flakes</th>
+                                                    <td></td>
+                                                    <td>(optional for heat)</td>
+                                                    <td>Pinch</td>
+                                                </tr>
 
-                                            <tr>
-                                                <th>Salt</th>
-                                                <td></td>
-                                                <td>(optional, for taste)</td>
-                                                <td>Appropriate</td>
-                                            </tr>
+                                                <tr>
+                                                    <th>Salt</th>
+                                                    <td></td>
+                                                    <td>(optional, for taste)</td>
+                                                    <td>Appropriate</td>
+                                                </tr>
 
-                                            <tr>
-                                                <th>Pepper</th>
-                                                <td></td>
-                                                <td>(optional, for taste)</td>
-                                                <td>Appropriate</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+                                                <tr>
+                                                    <th>Pepper</th>
+                                                    <td></td>
+                                                    <td>(optional, for taste)</td>
+                                                    <td>Appropriate</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
 
-                                <div class="Instruction">
-                                    <h2 class="numRecipe content">Instruction</h2>
-                                    <ol>
-                                        <li>Prep Ingredients: </li>
-                                        <ul class="Instruction step">
-                                            <li>Chop all vegetables and crack eggs into a small bowl (beat lightly).
+                                    <div class="Instruction">
+                                        <h2 class="numRecipe content">Instruction</h2>
+                                        <ol>
+                                            <li>Prep Ingredients: </li>
+                                            <ul class="Instruction step">
+                                                <li>Chop all vegetables and crack eggs into a small bowl
+                                                    (beat
+                                                    lightly).
+                                                </li>
+                                            </ul>
+
+                                            <li>Cook Veggies: </li>
+                                            <ul class="Instruction step">
+                                                <li>Heat sesame oil in a large nonstick skillet or wok over
+                                                    medium-high
+                                                    heat.</li>
+                                                <li>Add garlic and ginger, sauté 30 seconds.</li>
+                                                <li>Add veggies and stir-fry for 3–4 minutes, until just
+                                                    tender but
+                                                    still vibrant.</li>
+                                            </ul>
+
+                                            <li>Scramble Eggs: </li>
+                                            <ul class="Instruction step">
+                                                <li>Push veggies to one side of the pan.</li>
+                                                <li>Pour beaten eggs into the empty side. Let them set
+                                                    slightly,
+                                                    then
+                                                    gently scramble.</li>
+                                                <li>Once cooked, mix with veggies.</li>
+                                            </ul>
+
+                                            <li>Add Rice & Seasoning: </li>
+                                            <ul class="Instruction step">
+                                                <li>Add the cooked rice to the pan.</li>
+                                                <li>Drizzle with soy sauce and toss everything together.
+                                                </li>
+                                                <li>Stir-fry for another 1–2 minutes to heat through and
+                                                    combine
+                                                    flavors.</li>
+                                            </ul>
+
+                                            <li>Finish & Serve: </li>
+                                            <ul class="Instruction step">
+                                                <li>Taste and adjust salt, pepper, or soy sauce if needed.
+                                                </li>
+                                                <li>Garnish with green onions and chili flakes if using.
+                                                </li>
+                                                <li>Serve warm!</li>
+                                            </ul>
+                                        </ol>
+                                    </div>
+
+                                    <aside>
+                                        <h2 class="numRecipe content">Notes & Tips:</h2>
+                                        <ul id="tip">
+                                            <h3><Strong>Tips:</Strong></h3>
+                                            <li><strong>Make it vegan: </strong>Swap eggs for tofu or
+                                                tempeh. Just
+                                                cube
+                                                and sauté before the veggies.</li>
+                                            <li><strong>Spice it up: </strong>Add sriracha, chili garlic
+                                                sauce, or a
+                                                splash of rice vinegar for zing.</li>
+                                            <li><strong>More protein? </strong>Add an extra egg or some
+                                                edamame.
                                             </li>
+                                            <li><strong>Rice tip: </strong>Use leftover cold rice for better
+                                                texture.
+                                                Fresh rice can be too soft.</li>
+                                            <li><strong>Meal prep: </strong>Double the recipe and portion
+                                                into
+                                                containers. Stays good in the fridge for 3–4 days.</li>
                                         </ul>
+                                    </aside>
 
-                                        <li>Cook Veggies: </li>
-                                        <ul class="Instruction step">
-                                            <li>Heat sesame oil in a large nonstick skillet or wok over medium-high
-                                                heat.</li>
-                                            <li>Add garlic and ginger, sauté 30 seconds.</li>
-                                            <li>Add veggies and stir-fry for 3–4 minutes, until just tender but
-                                                still vibrant.</li>
-                                        </ul>
+                                </article>
+                            </div>
+                        </div>
 
-                                        <li>Scramble Eggs: </li>
-                                        <ul class="Instruction step">
-                                            <li>Push veggies to one side of the pan.</li>
-                                            <li>Pour beaten eggs into the empty side. Let them set slightly, then
-                                                gently scramble.</li>
-                                            <li>Once cooked, mix with veggies.</li>
-                                        </ul>
+                        <!-- ✅ 2nd Nested inside Root Vegetables -->
+                        <div class="nested-section">
+                            <button class="toggle-btn deep-nested" onclick="toggleContent(this)">
+                                <h2><em>Dinner</em></h2>
+                                <span class="arrow">▶️</span>
+                            </button>
+                            <div class="content nested-content">
+                                <p>No</p>
+                            </div>
+                        </div>
 
-                                        <li>Add Rice & Seasoning: </li>
-                                        <ul class="Instruction step">
-                                            <li>Add the cooked rice to the pan.</li>
-                                            <li>Drizzle with soy sauce and toss everything together.</li>
-                                            <li>Stir-fry for another 1–2 minutes to heat through and combine
-                                                flavors.</li>
-                                        </ul>
+                        <!-- ✅ 2nd Nested inside Root Vegetables -->
+                        <div class="nested-section">
+                            <button class="toggle-btn deep-nested" onclick="toggleContent(this)">
+                                <h2><em>Snack</em></h2>
+                                <span class="arrow">▶️</span>
+                            </button>
+                            <div class="content nested-content">
+                                <p>No</p>
+                            </div>
+                        </div>
 
-                                        <li>Finish & Serve: </li>
-                                        <ul class="Instruction step">
-                                            <li>Taste and adjust salt, pepper, or soy sauce if needed.</li>
-                                            <li>Garnish with green onions and chili flakes if using.</li>
-                                            <li>Serve warm!</li>
-                                        </ul>
-                                    </ol>
-                                </div>
+                        <!-- ✅ 2nd Nested inside Root Vegetables -->
+                        <div class="nested-section">
+                            <button class="toggle-btn deep-nested" onclick="toggleContent(this)">
+                                <h2><em>Dessert</em></h2>
+                                <span class="arrow">▶️</span>
+                            </button>
+                            <div class="content nested-content">
+                                <p>No</p>
+                            </div>
+                        </div>
 
-                                <aside>
-                                    <h2 class="numRecipe content">Notes & Tips:</h2>
-                                    <ul id="tip">
-                                        <li><strong>Make it vegan: </strong>Swap eggs for tofu or tempeh. Just cube
-                                            and sauté before the veggies.</li>
-                                        <li><strong>Spice it up: </strong>Add sriracha, chili garlic sauce, or a
-                                            splash of rice vinegar for zing.</li>
-                                        <li><strong>More protein? </strong>Add an extra egg or some edamame.</li>
-                                        <li><strong>Rice tip: </strong>Use leftover cold rice for better texture.
-                                            Fresh rice can be too soft.</li>
-                                        <li><strong>Meal prep: </strong>Double the recipe and portion into
-                                            containers. Stays good in the fridge for 3–4 days.</li>
-                                    </ul>
-                                </aside>
+                    </div>
+                </div>
 
-                            </article>
+                <!-- 1st Nested -->
+                <div class="nested-section">
+                    <button class="toggle-btn nested" onclick="toggleContent(this)">
+                        <h2 class="category subtitle"><Strong><em>Drink Or Soup</em></Strong></h2>
+                        <span class="arrow">▶️</span>
+                    </button>
+                    <div class="content nested-content">
+                        <p>No</p>
+                    </div>
+                </div>
 
-                        </section>
-                    </section>
+            </div>
+        </div>
 
-                    <!--Dinner-->
-                    <section class="dinner">
-                        <h2><em>Dinner</em></h2>
-                        <section></section>
-                    </section>
-
-                    <!--Snack-->
-                    <section class="snack">
-                        <h2><em>Snack</em></h2>
-                        <section></section>
-                    </section>
-
-                    <!--Dessert-->
-                    <section class="dessert">
-                        <h2><em>Dessert</em></h2>
-                        <section></section>
-                    </section>
-
-                </section>
-            </section>
-
-            <section id="drink">
-                <!--Drink Or Soup-->
-                <h2 class="category subtitle"><Strong><em>Drink Or Soup</em></Strong></h2>
-                <section></section>
-            </section>
-        </section>
-
-        <section></section>
     </main>
 
     <footer>
         <div class="container">
-            <a href="home.html" class="footer-logo">Shape+Health</a>
+            <a href="home.html" class="footer-logo">Good+Health</a>
             <div class="footer-links">
-                <a href="bmi&tdee.html">Do you know how to calculate your BMI?</a>
                 <a href="about.html">About Us</a>
                 <a href="Contact.html">Contact</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
             </div>
-            <p class="copyright">© 2025 Shape+Health. All rights reserved.</p>
+            <p class="copyright">© 2025 Good+Health. All rights reserved.</p>
         </div>
     </footer>
 
     </div>
 
     <script src="/javascript/recipe.js"></script>
-    
+
     <script src="/javascript/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
