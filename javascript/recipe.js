@@ -23,11 +23,11 @@ function toggleContent(button) {
 // Store picture group sets for each ingredient by ingredient ID
 const imageSet = {
     egg: [
-      "/image/egg/egg1.jpg",
-      "/image/egg/egg2.jpg",
-      "/image/egg/egg3.jpg",
-      "/image/egg/egg4.jpg",
-      "/image/egg/egg5.jpg"
+      "/image/egg1.jpg",
+      "/image/egg2.jpg",
+      "/image/egg3.jpg",
+      "/image/egg4.jpg",
+      "/image/egg5.jpg"
     ],
     onion: [
       "images/onion1.jpg",
