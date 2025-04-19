@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Shape+Life</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+      
+    </style>
+</head>
+<body class="bg-light">
+    <!-- Navigation -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="home.html" class="logo">Shape<span>+Health</span></a>
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="WellnessTips.html" class="active">Wellness Tips</a></li>
+                        <li><a href="nutrition.html">Nutrition</a></li>
+                        <li><a href="recipe.html">Healthy Recipes</a></li>
+                        <li><a href="Fitness.html">Fitness</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="bmi&tdee.html">BMI Calculator</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                        <li>
+                            <button class="theme-toggle" id="themeToggle">
+                                <i class="fas fa-moon"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+ 
+    <main class="container py-5">
+        <section class="contact-hero mb-5 d-flex align-items-center">
+            <div class="container text-center text-white">
+                <h1 class="display-4">Contact Us</h1>
+                <p class="lead">Your feedback matters to us</p>
+            </div>
+        </section>
+
+        <div class="row g-5">
+            <!-- Feedback Form -->
+            <div class="col-lg-7">
+                <div class="card shadow">
+                    <div class="card-body p-4">
+                        <h2 class="mb-4">Send Feedback</h2>
+                        <form id="feedbackForm" action="https://formspree.io/f/xgvajgjp" method="POST">
+                            <div class="mb-3">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" name="name" class="form-control" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" name="email" class="form-control" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control" name="message" rows="5" required></textarea>
+                            </div>
+
+                            <input type="hidden" name="_subject" value="New Feedback Submission">
+                            <input type="hidden" name="_replyto" value="lenges201@gmail.com">
+                            
+                            <button type="submit" class="btn btn-success">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Media Section -->
+            <div class="col-lg-5">
+                <div class="card shadow">
+                    <div class="card-body p-4">
+                        <h2 class="mb-4">Connect With Us</h2>
+                        <div class="social-links">
+                            
+                            <a href="https://x.com/KankungSam84411" 
+                               class="btn btn-outline-success d-block mb-3"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                <i class="fab fa-twitter me-2"></i> Twitter
+                            </a>
+                            
+                          
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Footer (Same as Homepage) -->
+    <footer class="bg-dark text-white py-4">
+        <!-- Copy footer from homepage -->
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
+    <script src="/javascript/script.js"></script>
+    
+
+    <script>
+        window.onbeforeunload = () => {
+            document.getElementById('feedbackForm').reset();
+        }
+    </script>
+</body>
+</html>
