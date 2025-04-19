@@ -47,8 +47,8 @@
     <main class="container">
         <section class="featured-articles">
 
-            <a href="https://www.youtube.com/watch?v=gedoSfZvBgE&t=2s">
-                <article class="article-card"> 
+            <article class="article-card" data-video="https://www.youtube.com/embed/gedoSfZvBgE">
+                <article class="article-card">
                     <div class="article-image">
                         <img src="/images/sleep.jpg" alt="Sleeping well">
                     </div>
@@ -63,9 +63,10 @@
                         </div>
                     </div>
                 </article>
-            </a>
+            </article>
+            <div class="video-container" id="videoContainer1"></div>
 
-            <a href="https://www.youtube.com/watch?v=e0n4vJt8dlw">
+            <article class="article-card" data-video="https://www.youtube.com/embed/e0n4vJt8dlw">
                 <article class="article-card">
                     <div class="article-image">
                         <img src="/images/sleep1.jpg" alt="Sleeping Well">
@@ -73,33 +74,37 @@
                     <div class="article-content">
                         <span class="article-category">Sleep Hygiene</span>
                         <h3 class="article-title">Avoid heavy meal before going to bed</h3>
-                        <p class="article-excerpt">While eating before bed might seem appealing, it's generally best to avoid large meals or snacks too close to bedtime.</p>
+                        <p class="article-excerpt">While eating before bed might seem appealing, it's generally best to
+                            avoid large meals or snacks too close to bedtime.</p>
                         <div class="article-meta">
                             <span><i class="far fa-user"></i>HealthTexas Medical Group</span>
                             <span style="margin-left: 15px;"><i class="far fa-clock"></i> 3 days ago</span>
                         </div>
                     </div>
                 </article>
-            </a>
+            </article>
+            <div class="video-container" id="videoContainer3"></div>
 
-            <a href="https://www.youtube.com/watch?v=sX8IQcW3nS8">
+            <article class="article-card" data-video="https://www.youtube.com/embed/iONDebHX9qk">
                 <article class="article-card">
                     <div class="article-image">
-                        <img src="/images/sleep2.jpg" alt="Sleeping Well">
+                        <img src="/images/timemanagement.png" alt="Brain Health">
                     </div>
                     <div class="article-content">
-                        <span class="article-category">Sleep Hygiene</span>
-                        <h3 class="article-title">Limit screen time before bed and rest time</h3>
-                        <p class="article-excerpt">Using a phone before is generally not recommended as it can negatively impact sleep quality and duration.</p>
+                        <span class="article-category">Great lifestyle</span>
+                        <h3 class="article-title">How to manage your time</h3>
+                        <p class="article-excerpt">Managing our time efficiently is something most of us have struggled
+                            with at some point during our personal or professional lives. </p>
                         <div class="article-meta">
-                            <span><i class="far fa-user"></i>Dr. Tenesha Wards</span>
-                            <span style="margin-left: 15px;"><i class="far fa-clock"></i> 6 days ago</span>
+                            <span><i class="far fa-user"></i>Ali Abdaal</span>
+                            <span style="margin-left: 15px;"><i class="far fa-clock"></i> 3 days ago</span>
                         </div>
                     </div>
                 </article>
-            </a>
+            </article>
+            <div class="video-container" id="videoContainer7"></div>
 
-            <a href="https://www.youtube.com/watch?v=WCZAfamf08M&t=1s">
+            <article class="article-card" data-video="https://www.youtube.com/embed/WCZAfamf08M">
                 <article class="article-card">
                     <div class="article-image">
                         <img src="/images/communication.jpg" alt="communication">
@@ -115,9 +120,10 @@
                         </div>
                     </div>
                 </article>
-            </a>
+            </article>
+            <div class="video-container" id="videoContainer5"></div>
 
-            <a href="https://www.youtube.com/watch?v=9Hto1HeMrYQ">
+            <article class="article-card" data-video="https://www.youtube.com/embed/9Hto1HeMrYQ">
                 <article class="article-card">
                     <div class="article-image">
                         <img src="/images/stress.jpg" alt="Brain Health">
@@ -132,24 +138,15 @@
                         </div>
                     </div>
                 </article>
-            </a>
+            </article>
+            <div class="video-container" id="videoContainer9"></div>
 
-            <a href="https://www.youtube.com/watch?v=iONDebHX9qk">
-                <article class="article-card">
-                    <div class="article-image">
-                        <img src="/images/timemanagement.png" alt="Brain Health">
-                    </div>
-                    <div class="article-content">
-                        <span class="article-category">Great lifestyle</span>
-                        <h3 class="article-title">How to manage your time</h3>
-                        <p class="article-excerpt">Managing our time efficiently is something most of us have struggled with at some point during our personal or professional lives. </p>
-                        <div class="article-meta">
-                            <span><i class="far fa-user"></i>Ali Abdaal</span>
-                            <span style="margin-left: 15px;"><i class="far fa-clock"></i> 3 days ago</span>
-                        </div>
-                    </div>
-                </article>
-            </a>
+           
+        </section>
+
+        <section class="recently-viewed" id="recentlyViewed">
+            <h2 class="section-title">Recently Viewed</h2>
+            <div class="viewed-list" id="viewedList"></div>
         </section>
 
     </main>
