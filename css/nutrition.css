@@ -1,213 +1,42 @@
-<!DOCTYPE html>
+.heroNutrition{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/image/nutrition/heroPicture.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
 
-<html lang="en">
+.heroNutrition h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
 
-<head>
-    <meta charset="utf-8">
-    <!--<meta> tag: viewport - control the layout and scaling of a webpage on different screen size of devices-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutrition</title>
+.heroNutrition p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+}
 
-    <!--<meta> tag: keywords - improve search engine optimization (SEO)-->
-    <meta name="keywords"
-        content="health, healthy, nutrition, life, live, lifestyle, daily, balance, diatary, science, boost, promote, vibrant, longevity">
-    <!--<meta> tag: description - brief summary of the webpage's content-->
-    <meta name="description"
-        content="A well-balanced diet, rich in nutrients is key to maintaining physical, mental and emotional health and preventing chronic diseases.">
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
 
-    <link rel="stylesheet" type="text/css" href="/css/nutrition.css">
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-</head>
+  th {
+    background-color: #f2f2f2;
+  }
 
-<body>
-    <header>
-        <div class="nutrition_page">
-            <div class="container">
-                <div class="header-content">
-                    <!-- Topic of website-->
-                    <a href="home.html" class="logo">Shape<span>+Health</span></a>
-                    <nav>
-                        <ul>
-                            <li><a href="home.html">Home</a></li>
-                            <li><a href="WellnessTips.html" class="active">Wellness Tips</a></li>
-                            <li><a href="nutrition.html">Nutrition</a></li>
-                            <li><a href="recipe.html">Healthy Recipes</a></li>
-                            <li><a href="Fitness.html">Fitness</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="bmi&tdee.html">BMI Calculator</a></li>
-                            <li><a href="Contact.html">Contact</a></li>
-                            <li>
-                                <button class="theme-toggle" id="themeToggle">
-                                    <i class="fas fa-moon"></i>
-                                </button>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <!-- Topic And Title of this webpage-->
-    <section class="heroNutrition">
-        <div class="container">
-            <h1>Nutrition</h1>
-            <p>Nourish to Flourish: Embracing a Healthy Eating Lifestyle</p>
-        </div>
-    </section>
-
-    <!--Internal Link!!!-->
-    <main>
-        <!--Categories-->
-        <section class="basic">
-            <h1 class="basic maintitle"><Strong>Nutrition Basics: </Strong></h1>
-            <section class="macronutrient">
-                <h5>These are nutrients your body needs in large amounts to provide energy and build/maintain body
-                    structures.</h5>
-                <h3><b>The 3 Main Macronutrients:</b></h3>
-
-                <table border="1" cellpadding="8">
-                    <thead>
-                        <tr>
-                            <th>Macronutrient</th>
-                            <th>Function</th>
-                            <th>Source Examples</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>Carbohydrates</th>
-                            <td>Main source of energy</td>
-                            <td>Bread, rice, pasta, fruits</td>
-                        </tr>
-                        <tr>
-                            <th>Proteins</th>
-                            <td>Build & repair tissues, enzymes, hormones</td>
-                            <td>Meat, eggs, beans, tofu</td>
-                        </tr>
-                        <tr>
-                            <th>Fats</th>
-                            <td>Energy storage, hormone production, protect organs</td>
-                            <td>Avocados, nuts, oils, butter</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <aside>
-                    <ul>
-                        <li>Calories come from macronutrients.</li>
-                        <li>Each gram provides energy:</li>
-                        <ul>
-                            <li>Carbs = 4 kcal</li>
-                            <li>Protein = 4 kcal</li>
-                            <li>Fat = 9 kcal</li>
-                        </ul>
-                    </ul>
-                </aside>
-            </section>
-
-            <section id="micronutrient">
-                <h5>Micronutrients are nutrients your body needs in small amounts, but they are essential for proper
-                    development, disease prevention, and bodily function.</h5>
-                <h3><b>2 Types of Micronutrients:</b></h3>
-
-                <table border="1" cellpadding="8">
-                    <thead>
-                        <tr>
-                            <th>Type</th>
-                            <th>Function</th>
-                            <th>Examples</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>Vitamins</th>
-                            <td>Regulate metabolism, immune function, help in cell repair</td>
-                            <td>Vitamin C (citrus), Vitamin A (carrots), Vitamin D (sunlight/fish)</td>
-                        </tr>
-                        <tr>
-                            <th>Minerals</th>
-                            <td>Bone health, nerve function, fluid balance</td>
-                            <td>Calcium, Iron, Magnesium, Potassium</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <aside>
-                    <ul>
-                        <li>Micronutrients do not give energy (no calories), but they help the body use energy from
-                            food.</li>
-                        <li>Deficiencies can cause health problems like anemia, rickets, or scurvy.</li>
-                    </ul>
-                </aside>
-            </section>
-
-            <section id="water">
-                <h2 class="category subtitle"><Strong><em>Water</em></Strong></h2>
-                <section>
-                    <table border="1" cellpadding="8">
-                        <thead>
-                            <tr>
-                                <th>Function of Water</th>
-                                <th>Why it is important</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Regulates body temperature</td>
-                                <td>Through sweat and respiration</td>
-                            </tr>
-                            <tr>
-                                <td>Transports nutrients and oxygen</td>
-                                <td>Via blood and other fluids</td>
-                            </tr>
-                            <tr>
-                                <td>Aids digestion and waste removal</td>
-                                <td>Helps with bowel movements and kidney function</td>
-                            </tr>
-                            <tr>
-                                <td>Lubricates joints and tissues</td>
-                                <td>Keeps your body moving smoothly</td>
-                            </tr>
-                        </tbody>
-                    </table>
-    
-                    <aside>
-                        <ul>
-                            <li>The human body is ~60% water.</li>
-                            <li>You lose water through breathing, sweating, and urination — so regular intake is critical.</li>
-                        </ul>
-                    </aside>
-                </section>
-            </section>
-
-            <section></section>
-            <section></section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <a href="home.html" class="footer-logo">Good+Health</a>
-            <div class="footer-links">
-                <a href="about.html">About Us</a>
-                <a href="Contact.html">Contact</a>
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="terms.html">Terms of Service</a>
-            </div>
-            <p class="copyright">© 2025 Good+Health. All rights reserved.</p>
-        </div>
-    </footer>
-
-    </div>
-
-    <script src="/javascript/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
-</html>
+  tr:hover {
+    background-color: #f9f9f9;
+  }
