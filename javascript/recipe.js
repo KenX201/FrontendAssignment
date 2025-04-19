@@ -23,29 +23,17 @@ function toggleContent(button) {
 // Store picture group sets for each ingredient by ingredient ID
 const imageSet = {
     egg: [
-      "/image/egg1.jpg",
-      "/image/egg2.jpg",
-      "/image/egg3.jpg",
-      "/image/egg4.jpg",
-      "/image/egg5.jpg"
-    ],
-    onion: [
-      "images/onion1.jpg",
-      "images/onion2.jpg",
-      "images/onion3.jpg"
-    ],
-    lettuce: [
-      "images/lettuce1.jpg",
-      "images/lettuce2.jpg",
-      "images/lettuce3.jpg"
+      "/images/egg1.jpg",
+      "/images/egg2.jpg",
+      "/images/egg3.jpg",
+      "/images/egg4.jpg",
+      "/images/egg5.jpg"
     ]
   };
   
   // Initialize current index per ingredient
   const imageIndex = {
     egg: 0,
-    onion: 0,
-    lettuce: 0
   };
   
   // Universal cycling function
